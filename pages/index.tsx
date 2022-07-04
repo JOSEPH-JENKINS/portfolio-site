@@ -39,7 +39,7 @@ const Home: NextPage = () => {
                 <span className='font-stylish text-9xl hover:text-orange-900' data-scroll>Stack</span><br />
                 <span className='font-bold text-9xl' data-scroll>Developer</span>
               </h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, magnam?</p>
+              <p>Intuitive design is how I give you new superpowers</p>
             </div>
           </section>
           <section className='pt-32 w-full gap-5 grid grid-cols-4 sm:grid-cols-12' data-scroll-section>
