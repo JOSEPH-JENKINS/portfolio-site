@@ -44,19 +44,21 @@ const Home: NextPage = () => {
           </section>
           <section className='pt-32 w-full gap-5 mb-20 grid grid-cols-4 sm:grid-cols-12' data-scroll-section>
             <ProjectCard first='Axer' last='Studios'/>
-            <div className="head mb-12 col-start-1 col-end-6" data-scroll>
-              <h1 className='text-right'>
-                <span className='font-bold text-9xl'>Shevon</span>
-                <span className='font-stylish text-9xl'>Salmon</span>
-              </h1>
-            </div>
-            <div className="col-start-1 col-end-10 bg-black h-[80vh] relative -z-10" data-scroll>
-              <Image loader={imageLoader} unoptimized src="/shevon.png" alt="Yeah" layout='fill' />
-            </div>
-            <div className='col-start-1 col-end-5' data-scroll>
-              <p>Worked on a fan site for my dear friend and youtuber, shevon salmon. 
-                <Link href={"/"}>Click to know more &rarr;</Link>
-              </p>
+            <div className='mb-48'>
+              <div className="head mb-12 col-start-1 col-end-6" data-scroll>
+                <h1 className='text-right'>
+                  <span className='font-bold text-9xl'>Shevon</span>
+                  <span className='font-stylish text-9xl'>Salmon</span>
+                </h1>
+              </div>
+              <div className="col-start-1 col-end-10 bg-black h-[80vh] relative -z-10" data-scroll>
+                <Image loader={imageLoader} unoptimized src="/shevon.png" alt="Yeah" layout='fill' />
+              </div>
+              <div className='col-start-1 col-end-5' data-scroll>
+                <p>Worked on a fan site for my dear friend and youtuber, shevon salmon. 
+                  <Link href={"/"}>Click to know more &rarr;</Link>
+                </p>
+              </div>
             </div>
           </section>
         </main>

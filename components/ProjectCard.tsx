@@ -7,8 +7,8 @@ import imageLoader from "../imageLoader"
 
 const ProjectCard = ({ first, last }: ProjectData) => {
   return (
-    <>
-        <div className="head mb-48 col-start-6 col-end-13" data-scroll>
+    <div className="mb-48">
+        <div className="head mb-12 col-start-6 col-end-13" data-scroll>
             <h1 className='text-right'>
                 <span className='font-bold text-9xl'>{first}</span>
                 <span className='font-stylish text-9xl'>{last}</span>
@@ -22,7 +22,7 @@ const ProjectCard = ({ first, last }: ProjectData) => {
                 <Link href={"/"}>Click to know more &rarr;</Link>
             </p>
         </div>
-    </>
+    </div>
   )
 }
 
