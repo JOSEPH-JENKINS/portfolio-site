@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, magnam?</p>
             </div>
           </section>
-          <section className='pt-32 w-full gap-5 mb-20 grid grid-cols-4 sm:grid-cols-12' data-scroll-section>
+          <section className='pt-32 w-full gap-5 grid grid-cols-4 sm:grid-cols-12' data-scroll-section>
             <ProjectCard first='Axer' last='Studios'/>
             <div className="head mb-12 col-start-1 col-end-6" data-scroll>
               <h1 className='text-right'>
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
             <div className="col-start-1 col-end-10 bg-black h-[80vh] relative -z-10" data-scroll>
               <Image loader={imageLoader} unoptimized src="/shevon.png" alt="Yeah" layout='fill' />
             </div>
-            <div className='col-start-1 col-end-5 mb-48' data-scroll>
+            <div className='col-start-1 col-end-5' data-scroll>
               <p>Worked on a fan site for my dear friend and youtuber, shevon salmon. 
                 <Link href={"/"}>Click to know more &rarr;</Link>
               </p>
