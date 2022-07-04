@@ -51,7 +51,7 @@ const Home: NextPage = () => {
               </h1>
             </div>
             <div className="col-start-1 col-end-10 bg-black h-[80vh] relative -z-10" data-scroll>
-              <Image loader={imageLoader} unoptimized src="/shevon.png" alt="Yeah" layout='fill' />
+              <Image src="/shevon.png" alt="Yeah" layout='fill' />
             </div>
             <div className='col-start-1 col-end-5' data-scroll>
               <p>Worked on a fan site for my dear friend and youtuber, shevon salmon. 
