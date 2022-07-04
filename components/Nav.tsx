@@ -14,7 +14,7 @@ const Nav: NextComponentType = () => {
             <h1 className="font-bold text-xs">available for freelance work</h1>
         </div>
         <div className="contact">
-            <h1 className="font-bold text-xs">contact me</h1>
+            <h1 className="font-bold text-xs">&copy; 2022</h1>
         </div>
     </div>
   )
