@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <main className='w-full px-5'>
           <section className='pt-32 w-full grid grid-cols-4 sm:grid-cols-12 gap-5' data-scroll-section>
             <p className='col-start-8 col-end-11 font-bold text-sm' data-scroll>
-              I'm Joseph Jenkins, a full stack developer "frontend heavy". Not your conventional developer, I work on projects with empathy
+              I am Joseph Jenkins, a full stack developer, frontend heavy. Not your conventional developer, I work on projects with empathy
               in mind.
             </p>
             <div className='col-start-1 col-end-12 pt-10'>
