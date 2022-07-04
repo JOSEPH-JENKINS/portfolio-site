@@ -15,7 +15,7 @@ const ProjectCard = ({ first, last }: ProjectData) => {
             </h1>
         </div>
         <div className="col-start-4 col-end-13 bg-black h-[80vh] relative -z-10" data-scroll>
-            <Image loader={imageLoader} unoptimized src="/Capture.png" alt="Yeah" layout='fill' />
+            <Image src="/Capture.png" alt="Yeah" layout='fill' />
         </div>
         <div className='col-start-1 col-end-5' data-scroll>
             <p>Worked on redesigning the Axer Studios site. This project was done out of fun after applying for the frontend developer internship role at Axer Studios. 
