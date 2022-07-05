@@ -16,7 +16,7 @@ const Intro: FC = () => {
         </div>
         <div className="w-full">
             <div className="h-[70vh] w-full sm:w-1/2 ml-auto bg-black relative">
-                <Image loader={imageLoader} unoptimized src="/or-hakim-xvhroGtkC0Y-unsplash.jpg" className="object-cover object-top" alt="Yeah" layout='fill' />
+                <Image loader={imageLoader} unoptimized src="/kunal-patil-kf1OAlprrZA-unsplash.jpg" className="object-cover" alt="Yeah" layout='fill' />
             </div>
         </div>
     </section>

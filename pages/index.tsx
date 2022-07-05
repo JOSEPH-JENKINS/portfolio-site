@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRef } from 'react'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import About from '../components/About'
+import Contact from '../components/Contact'
 import Cursor from '../components/Cursor'
 import Intro from '../components/Intro'
 import Nav from '../components/Nav'
@@ -42,6 +43,7 @@ const Home: NextPage = () => {
               codeLink='https://github.com/JOSEPH-JENKINS/axer-studios.git'
             />
           </section>
+          <Contact />
         </main>
       </div>
     </>
