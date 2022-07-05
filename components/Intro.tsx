@@ -1,17 +1,28 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import Image from 'next/image';
 import imageLoader from '../imageLoader';
+import { gsap, Power2 } from 'gsap';
 
 const Intro: FC = () => {
+
+  useEffect(()=>{
+    gsap.to(document.querySelectorAll(".intro h1"), {
+        y: 0,
+        stagger: .25,
+        delay: 1,
+        ease: Power2.easeInOut
+    });
+   }, [])
+
   return (
-    <section className='pt-10 w-full relative' data-scroll-section>
+    <section className='pt-10 w-full relative'>
         <div className='mb-12'>
-            <div className="relative">
-            <h1>
-                <span className='font-bold text-5xl sm:text-[13.5vw] mr-10' data-scroll>Front</span>
-                <span className='font-bold text-5xl sm:text-[13.5vw]' data-scroll>End</span><br />
-                <span className='font-bold text-5xl sm:text-[13.5vw]' data-scroll>Developer</span>
-            </h1>
+            <div className="relative overflow-hidden">
+                <span className='intro relative'>
+                    <h1 className='font-bold text-5xl sm:text-[13.5vw] mr-5 inline-block translate-y-[200%]'>Front</h1>
+                    <h1 className='font-bold text-5xl sm:text-[13.5vw] inline-block translate-y-[200%]'>End</h1><br />
+                    <h1 className='font-bold text-5xl sm:text-[13.5vw] inline-block translate-y-[200%]'>Developer</h1>
+                </span>
             </div>
         </div>
         <div className="w-full">
