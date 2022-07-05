@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Nav: NextComponentType = () => {
   return (
-    <div className="fixed w-full px-5 pt-5 flex justify-between mix-blend-difference z-[999]">
+    <div className="absolute w-full px-5 pt-5 flex justify-between mix-blend-difference z-[999]">
         <div className="logo">
             <Link href={"/"}><h1 className="font-bold text-xs">Joseph Jenkins</h1></Link>
         </div>

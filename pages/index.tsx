@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
 import asPath from 'next/router'
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+import { LocomotiveScrollProvider, useLocomotiveScroll } from 'react-locomotive-scroll'
 import ProjectCard from '../components/ProjectCard'
 import imageLoader from '../imageLoader'
 
@@ -18,6 +18,7 @@ const Home: NextPage = () => {
         smooth: true
       }
     }
+    watch={[]}
     location={asPath}
     containerRef={containerRef}
     >
@@ -29,7 +30,7 @@ const Home: NextPage = () => {
         </Head>
         <main className='w-full px-5'>
           <section className='pt-32 w-full grid grid-cols-4 sm:grid-cols-12 gap-5' data-scroll-section>
-            <p className='col-start-8 col-end-11 font-bold text-sm' data-scroll>
+            <p className='col-start-8 col-end-11 font-bold text-sm' data-scroll-speed='2'>
               I am Joseph Jenkins, a full stack developer, frontend heavy. Not your conventional developer, I work on projects with empathy
               in mind.
             </p>
