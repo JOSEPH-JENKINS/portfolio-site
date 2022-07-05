@@ -3,18 +3,12 @@ import Link from "next/link"
 
 const Nav: NextComponentType = () => {
   return (
-    <div className="absolute w-full px-5 pt-5 flex justify-between mix-blend-difference z-[999]">
+    <div className=" text-black h-24 items-center w-full px-5 sm:px-12 pt-5 flex justify-between z-[999]">
         <div className="logo">
-            <Link href={"/"}><h1 className="font-bold text-xs">Joseph Jenkins</h1></Link>
+            <h1 className="font-bold text-sm sm:text-base"><Link href={"/"}>Joseph Jenkins</Link></h1>
         </div>
-        <div className="email hidden sm:block">
-            <Link href="mailto:amjosephjenkins@gmail.com"><h1 className="font-bold text-xs">amjosephjenkins@gmail.com</h1></Link>
-        </div>
-        <div className="freelance hidden sm:block">
-            <h1 className="font-bold text-xs">available for freelance work</h1>
-        </div>
-        <div className="contact">
-            <h1 className="font-bold text-xs">&copy; 2022</h1>
+        <div className="freelance text-right">
+            <h1 className="font-bold text-sm sm:text-base">available for freelance work</h1>
         </div>
     </div>
   )
