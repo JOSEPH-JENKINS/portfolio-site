@@ -43,7 +43,7 @@ const Home: NextPage = () => {
               <p>Intuitive design is how I give you new superpowers</p>
             </div>
           </section>
-          <section className='pt-32 w-full gap-5 grid grid-cols-4 sm:grid-cols-12 sm:hidden' data-scroll-section>
+          <section className='pt-32 w-full gap-5 hidden grid-cols-4 sm:grid-cols-12 sm:grid' data-scroll-section>
             <ProjectCard first='Axer' last='Studios'/>
             <div className="head mb-12 col-start-1 col-end-6" data-scroll>
               <h1 className='text-right'>
