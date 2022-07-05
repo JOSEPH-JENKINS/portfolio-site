@@ -1,4 +1,7 @@
 export interface ProjectData{
-    first: string,
-    last: string
+    name: string,
+    subtext: string,
+    description: string,
+    siteLink: string,
+    codeLink: string,
 }

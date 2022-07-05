@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const About: FC = () => {
   return (
-    <section className="mt-24 w-full relative mb-24" data-scroll-section>
+    <section className="mt-24 w-full relative" data-scroll-section>
         <div className="block sm:grid grid-cols-6 gap-5">
             <h1 className="font-sans text-base">About Me</h1><br />
             <div className='font-bold w-full ml-auto text-lg col-start-3 col-end-7'>

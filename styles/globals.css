@@ -16,3 +16,15 @@
     font-family: Krylon;
     src: url("../assets/Krylon-Regular.otf");
 }
+
+html {
+@apply scroll-smooth;
+}
+
+.c-scrollbar_thumb {
+@apply !bg-white;
+}
+
+[data-scroll-container] {
+perspective: 999999px !important;
+}
