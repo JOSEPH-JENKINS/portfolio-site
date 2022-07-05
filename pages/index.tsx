@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <section className="mt-48 w-full relative" data-scroll-section>
             <div className="block sm:grid grid-cols-6 gap-5">
               <h1 className="font-sans text-sm sm:text-3xl">About Me</h1><br />
-              <div className='font-bold text-right sm:text-left w-full ml-auto text-lg col-start-3 col-end-7'>
+              <div className='font-bold w-full ml-auto text-lg col-start-3 col-end-7'>
                 <h1>
                   I am a front-end developer based in Lagos, Nigeria who is driven to creating empathic experiences on the world wide web.
                   Passionate about web technologies. I love working with a careful thought-out design and bringing that design to life with those web technologies.
