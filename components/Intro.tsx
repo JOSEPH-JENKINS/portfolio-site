@@ -1,37 +1,53 @@
-import { FC, useEffect } from 'react';
-import Image from 'next/image';
-import imageLoader from '../imageLoader';
-import { gsap, Power2 } from 'gsap';
+import { FC, useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import ImageLink from "./ImageLink";
 
 const Intro: FC = () => {
+    useEffect(()=>{
+        gsap.registerPlugin(ScrollTrigger);
+        introAnimation();
+        heroTextAnimation();
+    }, [])
 
-  useEffect(()=>{
-    gsap.to(document.querySelectorAll(".intro h1"), {
-        y: 0,
-        stagger: .25,
-        delay: 1,
-        ease: Power2.easeInOut
-    });
-   }, [])
+    const introAnimation = () => {
+        gsap.to(".hero-img", {
+            scrollTrigger: {
+              trigger: ".hero",
+              start: 'top top',
+              end: "bottom 20px",
+              scrub: 1
+            },
+            yPercent: "-50",
+        });
+    }
 
-  return (
-    <section className='pt-10 w-full relative'>
-        <div className='mb-12'>
-            <div className="relative overflow-hidden">
-                <span className='intro relative'>
-                    <h1 className='font-bold text-5xl sm:text-[13.5vw] mr-5 inline-block translate-y-[200%]'>Front</h1>
-                    <h1 className='font-bold text-5xl sm:text-[13.5vw] inline-block translate-y-[200%]'>End</h1><br />
-                    <h1 className='font-bold text-5xl sm:text-[13.5vw] inline-block translate-y-[200%]'>Developer</h1>
-                </span>
+    const heroTextAnimation = () => {
+        gsap.to(".hero-text span", {
+          y: 0,
+          delay: 1,
+          opacity: 1,
+          stagger: .28,
+        })
+      }
+
+    return (
+        <section className='h-screen w-screen px-5 sm:px-12 relative grid grid-cols-4 grid-rows-5 sm:grid-cols-12 gap-5 hero'>
+            <div className="relative lg:hidden md:col-start-5 md:col-end-13 col-start-2 col-end-13 row-start-3 row-end-6 sm:col-start-1 sm:col-end-5 sm:row-start-2 sm:row-end-6 bg-black hero-img">
+              <ImageLink src="./katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg" />
             </div>
-        </div>
-        <div className="w-full">
-            <div className="h-[70vh] w-full sm:w-1/2 ml-auto bg-black relative">
-                <Image loader={imageLoader} unoptimized src="/kunal-patil-kf1OAlprrZA-unsplash.jpg" className="object-cover" alt="Yeah" layout='fill' />
+            <div className='relative col-start-1 col-end-13 row-start-2 sm:col-end-13 sm:row-start-2 sm:row-end-6'>
+              <h1 className='w-full font-bold text-3xl md:text-5xl sm:text-9xl md:leading-[1.14] hero-text inline-flex items-center flex-wrap justify-between'>
+                <span className='translate-y-5 opacity-0 '>building</span>
+                <span className='translate-y-5 opacity-0 '>empathic</span> 
+                <span className='translate-y-5 opacity-0 '>digital</span>
+                <span className='hidden lg:block font-sans text-xs'>wanna know more about my shit, scroll down</span>
+                <span className='translate-y-5 opacity-0 '>web</span>
+                <span className='translate-y-5 opacity-0 '>experiences</span>
+              </h1>
             </div>
-        </div>
-    </section>
-  )
+        </section>
+    );
 }
 
-export default Intro
+export default Intro;

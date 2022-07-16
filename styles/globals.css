@@ -17,14 +17,14 @@
     src: url("../assets/Krylon-Regular.otf");
 }
 
-html {
-@apply scroll-smooth;
+@font-face {
+    font-family: 'Dirtyline36Daysoftype2022'; /* IE9 Compat Modes */
+    src: url("../assets/Zighead.otf");
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
 }
 
-.c-scrollbar_thumb {
-@apply !bg-white;
-}
-
-[data-scroll-container] {
-perspective: 999999px !important;
+body{
+    background: #121212
 }

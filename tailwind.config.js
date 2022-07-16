@@ -9,7 +9,7 @@ module.exports = {
     fontFamily: {
       sans: ['Neutral'],
       bold: ["NeutralBold"],
-      stylish: ["Krylon"]
+      stylish: ["Dirtyline36Daysoftype2022"]
     }
   },
   plugins: [],
