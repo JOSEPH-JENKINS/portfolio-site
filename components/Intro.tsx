@@ -37,7 +37,7 @@ const Intro: FC = () => {
               <ImageLink src="./katsiaryna-endruszkiewicz-BteCp6aq4GI-unsplash.jpg" />
             </div>
             <div className='relative col-start-1 col-end-13 row-start-2 sm:col-end-13 sm:row-start-2 sm:row-end-6'>
-              <h1 className='w-full font-bold text-3xl md:text-5xl sm:text-9xl md:leading-[1.14] hero-text inline-flex items-center flex-wrap justify-between'>
+              <h1 className='w-full font-bold text-3xl md:text-5xl lg:text-9xl md:leading-[1.14] hero-text inline-flex items-center flex-wrap justify-between'>
                 <span className='translate-y-5 opacity-0 '>building</span>
                 <span className='translate-y-5 opacity-0 '>empathic</span> 
                 <span className='translate-y-5 opacity-0 '>digital</span>
