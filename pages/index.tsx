@@ -8,7 +8,10 @@ import { motion } from "framer-motion"
 
 const Home: NextPage = () => {
   return (
-    <motion.div exit={{ y: -50 }} initial={{ y: -50 }} animate={{ y: 0 }}>
+    <motion.div 
+      exit={{ y: -100, opacity: 0 }} 
+      initial={{ y: -100, opacity: 0 }} 
+      animate={{ y: 0, opacity: 1 }}>
       <div className='w-full bg-[#121212] text-[#f4f4f4]'>
         <Head>
           <title>Joseph Jenkins - Creative Developer</title>
